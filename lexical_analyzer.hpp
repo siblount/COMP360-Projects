@@ -4,9 +4,9 @@
 #include "analyzer.hpp"
 #include "lexeme.hpp"
 
-static const std::vector<std::string> keywords;
-static const std::vector<std::string> ops;
-static const std::vector<std::string> punctuation;
+static const std::vector<std::string> keywords {"float", "void"};
+static const std::vector<std::string> ops {"=", "+", "-"};
+static const std::vector<std::string> punctuation {"(", ")", "{", "}", ";"};
 
 class LexicalAnalyzer : public Analyzer {
 public:

@@ -6,10 +6,6 @@
 #include "lexical_analyzer.hpp"
 #include "util.hpp"
 
-static const std::vector<std::string> keywords {"float", "void"};
-static const std::vector<std::string> ops {"=", "+", "-"};
-static const std::vector<std::string> punctuation {"(", ")", "{", "}", ";"};
-
 LexicalAnalyzer::LexicalAnalyzer() {}
 
 std::vector<Lexeme> LexicalAnalyzer::Analyze(std::string input) {
